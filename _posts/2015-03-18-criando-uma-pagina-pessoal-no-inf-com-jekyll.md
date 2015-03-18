@@ -35,7 +35,7 @@ Após criar o projeto no Travis CI, basta configurar as [variáveis de ambiente 
     $ travis encrypt DEPLOY_HOST="home.inf.ufg.br" --add
     $ travis encrypt DEPLOY_USERNAME="<sigadocurso><matricula>" --add # Exemplo: es2015000
     $ travis encrypt DEPLOY_PASSWORD="password" --add
-    $ travis encrypt DEPLOY_REMOTEDIR="/home/alunos/msc/<sigadocurso><matricula>/public_html" --add
+    $ travis encrypt DEPLOY_REMOTEDIR="/home/alunos/<sigadocurso><matricula>/public_html" --add
 
 Feito isso, seu arquivo ```.travis.yml``` deve ficar assim: 
 

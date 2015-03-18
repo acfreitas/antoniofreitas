@@ -11,9 +11,9 @@ exclude:
   - 'vendor'
   - 'Gemfile*'
   - 'README.md'
+  - 'README.md'
   - '*.yml'
-  - '*.sass'
-  - '*.scss'
-  
+  - 'LICENSE'
+
 # Build settings
 markdown: kramdown

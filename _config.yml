@@ -3,9 +3,14 @@ title: Antônio Freitas
 email: antoniofreitas@inf.ufg.br
 description: Mestrado em Ciência da Computação
 baseurl: ""
-url: "http://inf.ufg.br/~antoniofreitas/" 
+url: "http://localhost:4000/" 
 twitter_username: acarlosfreitas
 github_username:  acfreitas
+lattes_id:  5551718524873669
+nome_citacoes: A C FREITAS
+linkedin_username:  acarlosfreitas
+stackoverflow_username: acfreitas
+stackoverflow_id: 2335712
 
 exclude:
   - 'vendor'

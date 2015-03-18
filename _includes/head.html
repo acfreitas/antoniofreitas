@@ -3,8 +3,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{{ site.title }} | Instituto de Informática</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+  <div id="logos">
+    <a title="Acessar o portal do INF" href="http://inf.ufg.br"><img alt="Logo do INF" src="{{ site.url }}imagens/inf.png" align="left"></a>
+     <a title="Acessar o portal do UFG" href="http://www.ufg.br"><img alt="Logo do UFG" src="{{ site.url }}imagens/ufg.png" align="right"></a>
+  </div>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

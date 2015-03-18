@@ -45,6 +45,36 @@
         </ul>
       </div>
 
+         {% if site.lattes_id %}
+          <li>
+            <a href="http://lattes.cnpq.br/{{ site.lattes_id }}">
+              <img src="{{ site.url }}imagens/lattes.jpg" width="25" alt="Linkedin Logo">
+              <span class="username">{{ site.nome_citacoes }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+              <img src="{{ site.url }}imagens/linkedin_logo.png" width="25" alt="Linkedin Logo">
+              <span class="username">{{ site.linkedin_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.stackoverflow_username %}
+          <li>
+            <a href="http://stackoverflow.com/users/{{ site.stackoverflow_id }}/{{ site.stackoverflow_username }}">
+              <img src="{{ site.url }}imagens/stackoverflow.png" width="25" alt="Stackoverflow Logo">
+              <span class="username">{{ site.stackoverflow_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
       <div class="footer-col  footer-col-3">
         <p class="text">{{ site.description }}</p>
       </div>

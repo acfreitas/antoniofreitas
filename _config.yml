@@ -1,0 +1,11 @@
+# Site settings
+title: Antônio Freitas
+email: antoniofreitas@inf.ufg.br
+description: Mestrado em Ciência da Computação
+baseurl: ""
+url: "http://inf.ufg.br/~antoniofreitas/" 
+twitter_username: acarlosfreitas
+github_username:  acfreitas
+
+# Build settings
+markdown: kramdown

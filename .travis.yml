@@ -1,12 +1,11 @@
 language: ruby
 rvm: 2.0.0
-env:
-  global:
-  - secure: obYnCEQ36T5BL1fM241Fk5qlcjaVIw+gkuSECtMuIwl/KlrBbSY25f73x02oYGNY2w/NgvtGGqkLzIEm4PuQQkN70+8ndpnfuhr6y0w+ScfxpGjvD5+hhWQTshhQS7pVYBQ1vQ2BsYnqXOn8jCwhxx+DOkG2tIvhKkBMfW7mlTw=
-  - secure: dBRFhXQGakWCpz1FhgXobEfw8x6i5RqNuB0tk96N3rNnANxH3E8VTUPtWM1O0lcDCFL33oclf9tAmRt8TkSo4OrWqD63t9hCM9fnA3EgJhiYR/wi7takRu+gQtrbDvSUMG97z510NzHH3/xCV0Ubjrlw2V/G5kE7s7uDpQxCwPM=
-  - secure: k5JNWTjsOROp6PsbuyqjDePrnmRnlp7D68/2VVMup+Db0qxTECUovddEKGCtEaIRoYdGRMliFDi6OSRlG72pktuGuJ0gpznVeLUoMjsyRAkeJfMNx/cNxUkv/qixJU5INPmBPap/2dhIPx5X5f5ubLg2ojTb139pdGUZHmB++tY=
-  - secure: A0VZjeyxXE4oYqKlzF0fLuYMegmpl4PM1EIM8L2Dmv0wdmF8obodXSyCw4FDIQYHp13kHqZ+3WAFJ8zg3yUODz3AB55lJGmDx956XTtmgeu1P1LmB9y8+uH4dxW+t+iG06bcdQIPUv76+pe2j1mpymT4gaenrKCHrB4Oe5qckjw=
-
 script:
 - bundle exec jekyll build --trace
 after_success: bundle exec travis-custom-deploy sftp service:jekyll
+env:
+  global:
+  - secure: RKcpifeal1qCgPi+03KFszJuwhRJcUUivcTx4WEv8nKAij+2PhQTEYUVeJ/sSJiRKj4il75xKL9AtGNVH6suYxaKgEJ4Nu9Qdw2M9lMtL2134J0eM9hmtv68OiBpAyUm7Ypijup0IpPWSuzJf+9pQ/8j2eDgJig83EP9q87cw74=
+  - secure: G+05+voGp+ZGj5QlcgOKD7RS8EliVc8jdTnYGLhjJb0a50/7FCv8Jwrpe60AHX6NgeX+tM79K2Eoov+2tapAaPgy/u57WU8Sdy5jT9ImgtWyzE9Sbn4w184st17Fv5uLi4oot/759Ccl89TVckBJNZ4Xl6kh5FYyLFpbxfK2Abg=
+  - secure: o4nfB9rKy9tSTQrSb+HUV49ECmkXgA44AqAO+s0oHwkvQfSd78RnqGp6nEMVd+NMEHlxDBHou9yQ2V1Z4Vq9xRPCmR/LK5xpsCBweSB/Q7xM9g+Hzd4NAVLgmFVxxP3Aq9NnzRQimKsocN/kl/gyvkBELA0W3t6O6drwxTqXR+g=
+  - secure: p7Dq9AN1BfRGHl3Ug5qyRHx4nMe/G1WXHCSV2VSICCsFwHJWDm6Jyryhl7FMpCcaxTy5l3f8sYP3JnoFwyBSMDiQFTqgpLqtVTDEILKwK8tCl2fUPcGVNr3nOUsD5m9wBNDdrLkuB6UEDuFMhStWJP3zjdtFkvF8sRkX3Sgs+n8=

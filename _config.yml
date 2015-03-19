@@ -1,9 +1,9 @@
 # Site settings
-title: Antônio Freitas
+title: Antônio Carlos
 email: antoniofreitas@inf.ufg.br
 description: Mestrado em Ciência da Computação
-baseurl: ""
-url: "http://localhost:4000/" 
+baseurl: "http://inf.ufg.br/~msc20150217/"
+url: "http://inf.ufg.br/~msc20150217/" 
 twitter_username: acarlosfreitas
 github_username:  acfreitas
 lattes_id:  5551718524873669

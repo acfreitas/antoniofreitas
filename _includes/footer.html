@@ -7,13 +7,9 @@
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
 
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
+          <ul class="social-media-list">
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">
@@ -42,13 +38,17 @@
             </a>
           </li>
           {% endif %}
+          
         </ul>
       </div>
 
-         {% if site.lattes_id %}
+      <div class="footer-col  footer-col-2">
+        
+
+          {% if site.lattes_id %}
           <li>
             <a href="http://lattes.cnpq.br/{{ site.lattes_id }}">
-              <img src="{{ site.url }}imagens/lattes.jpg" width="25" alt="Linkedin Logo">
+              <img src="{{ site.url }}/imagens/lattes.jpg" width="25" alt="Linkedin Logo">
               <span class="username">{{ site.nome_citacoes }}</span>
             </a>
           </li>
@@ -57,7 +57,7 @@
           {% if site.linkedin_username %}
           <li>
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-              <img src="{{ site.url }}imagens/linkedin_logo.png" width="25" alt="Linkedin Logo">
+              <img src="{{ site.url }}/imagens/linkedin_logo.png" width="25" alt="Linkedin Logo">
               <span class="username">{{ site.linkedin_username }}</span>
             </a>
           </li>
@@ -66,11 +66,16 @@
           {% if site.stackoverflow_username %}
           <li>
             <a href="http://stackoverflow.com/users/{{ site.stackoverflow_id }}/{{ site.stackoverflow_username }}">
-              <img src="{{ site.url }}imagens/stackoverflow.png" width="25" alt="Stackoverflow Logo">
+              <img src="{{ site.url }}/imagens/stackoverflow.png" width="25" alt="Stackoverflow Logo">
               <span class="username">{{ site.stackoverflow_username }}</span>
             </a>
           </li>
           {% endif %}
+
+        </ul>
+      </div>
+
+         
 
         </ul>
       </div>
